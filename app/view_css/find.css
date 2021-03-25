@@ -1,0 +1,74 @@
+#find{
+    background-color: #F9F9F9;
+    padding-top: 0.8rem;
+    height: 100%;
+    -webkit-overflow-scrolling: touch; 
+}
+.index-list-title{
+    background-image: url(../res/index-title.png);
+}
+.item-list {
+    width: 6.9rem;
+    padding-bottom: .98rem;
+    margin: 0 auto;
+    background: #F9F9F9;
+}
+
+.item-list ul {
+    width: 100%;
+    column-gap: .3rem;
+    column-count: 2;
+    height: auto;
+    background: #F9F9F9;
+}
+
+.item-list li {
+    background-color: #fff;
+    display: inline-block;
+    width: 3.28rem;
+    height: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-bottom: .1rem;
+    margin-bottom: .34rem;
+    border-radius: 0.06rem;
+}
+
+.item-list li img {
+    width: 3.28rem;
+    height: auto;
+}
+
+.item-list li a {
+    height: auto;
+    font-size: 0;
+    color: #333;
+}
+
+.item-list li h3 {
+    font-size: .22rem;
+    color: #333;
+    margin: 0.24rem 0 0.12rem;
+    padding: 0 0.28rem 0 0.15rem;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.item-list .hot-status .icon {
+    width: .18rem;
+    height: .22rem;
+    background-position: -2rem -1.56rem;
+}
+
+.item-list .hot-status {
+    margin-right: .15rem;
+    display: flex;
+    float: right;
+    color: #EC4A58;
+    line-height: .22rem;
+}
+
+.item-list li .flexH{
+    min-height: 0.6rem;
+}

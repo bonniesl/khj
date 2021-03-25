@@ -1,0 +1,20 @@
+/*******签到有礼弹窗*******/
+.signDialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.signDialog .signCon{
+    background: url(../res/signDialog1.png) no-repeat 0 0 / 7.14rem 7.88rem;
+    width: 7.14rem;
+    height: 7.88rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -3.94rem 0 0 -3.57rem;
+    z-index: 100;
+}

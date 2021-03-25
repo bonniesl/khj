@@ -1,0 +1,217 @@
+#collect {
+    background-color: #F5F5F5;
+    padding-top: 0.8rem;
+}
+
+.collect-content {
+    width: 6.9rem;
+    height: 100%;
+    overflow-y: auto;
+    margin: 0 auto;
+    overflow-x: hidden
+}
+
+/******导航*****/
+.collect-content nav {
+    height: .6rem;
+    padding-top: .25rem;
+    font-size: .28rem;
+}
+
+.collect-content nav em {
+    background-color: #fff;
+    height: .6rem;
+    line-height: .6rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+.collect-content nav .cur{
+    background-color: #EC4A58;
+    color: #fff;
+}
+
+/******编辑按钮*****/
+.collect-edit-box{
+    height: .7rem;
+    line-height: .7rem;
+    text-align: right;
+    color: #EC4A58;
+    font-size: .28rem;
+}
+.collect-edit-box em{
+    height: 0.7rem;
+    line-height: 0.7rem;
+    display: inline-block;
+    width: 2rem;
+}
+
+/******商品列表*****/
+.itemTab{
+    display: none;
+}
+.item-list {
+    /* padding-top: .42rem; */
+    overflow-x: hidden;
+}
+
+.item-list li {
+    position: relative;
+    background-color: #fff;
+    width: 6.9rem;
+    float: left;
+    height: 2.05rem;
+    margin-bottom: .24rem;
+    transition: transform 0.3s ease;
+}
+
+.item-list li>a {
+    float: left;
+    width: 2.05rem;
+    height: 2.05rem;
+}
+
+.item-list li>a img {
+    width: 2.05rem;
+    height: 2.05rem;
+}
+
+.item-list li .right {
+    height: 100%;
+    float: right;
+    width: 4.55rem;
+}
+
+.item-list li h3 {
+    margin-top: .32rem;
+    font-size: .24rem;
+    color: #333;
+    overflow: hidden;
+    text-overflow: -o-ellipsis-lastline;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.item-list li .get-btn {
+    right: .14rem;
+    bottom: .17rem;
+}
+
+.item-list li .price {
+    color: #EC4A58;
+    font-size: .24rem;
+    bottom: .17rem;
+}
+
+.item-list li .del-btn{
+    width: 1.22rem;
+    height: 100%;
+    background-color: #EC4A58;
+    text-align: center;
+    line-height: 2.05rem;
+    color: #fff;
+    top: 0;
+    left: 6.9rem;
+}
+.item-list li.edit{
+    transform: translate3d(-1.22rem, 0, 0);
+}
+
+/****************** 商品列表 *****************/
+
+.item-list-box {
+    width: 6.9rem;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: .98rem;
+}
+
+.item-list-box li {
+    position: relative;
+    height: 5rem;
+    background: #fff;
+    margin-bottom: 0.36rem;
+}
+
+.item-list-box li>a {
+    float: left;
+    height: 3.45;
+    width: 6.9rem;
+    display: inline-block;
+}
+
+.item-list-box li>a img {
+    width: 6.9rem;
+    height: 3.45rem;
+    float: left;
+}
+
+.item-list-box h3 {
+    font-size: .28rem;
+    color: #333;
+    padding-bottom: .1rem;
+}
+
+.item-list-box .item-msg {
+    float: left;
+    padding: .3rem 0.1rem .5rem;
+}
+
+.item-list-box .left {
+    width: 5.1rem;
+    float: left;
+}
+
+.item-list-box .left span {
+    line-height: .3rem;
+}
+
+.item-list-box .right {
+    float: right;
+}
+
+.item-list-box .need-btn {
+    margin-top: .15rem;
+}
+
+.item-list-box del {
+    color: #bbb;
+    vertical-align: middle;
+}
+
+.item-list-box .price {
+    color: #EC4A58;
+    padding-right: .25rem;
+}
+
+.item-list-box .game-status {
+    color: #fff;
+    text-align: center;
+    top: .2rem;
+    left: .2rem;
+    font-style: normal;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: .4rem;
+    width: 1.6rem;
+    height: .45rem;
+    line-height: .45rem;
+}
+.roomItem{
+    transition: transform 0.3s ease;
+}
+.roomItem .del-btn{
+    width: 1.22rem;
+    height: 100%;
+    background-color: #EC4A58;
+    text-align: center;
+    line-height: 5rem;
+    color: #fff;
+    top: 0;
+    left: 6.9rem;
+}
+.roomItem.edit {
+    -webkit-transform: translate3d(-1.22rem, 0, 0);
+    transform: translate3d(-1.22rem, 0, 0);
+}

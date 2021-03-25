@@ -1,0 +1,4 @@
+口红成功插入声 touch2.mp3
+口红插入失败及游戏失败音效  plunderfail.mp3
+通过小关时音效 lotteryresult.mp3
+闯关成功音效 shine2.mp3 + scream.mp3

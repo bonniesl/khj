@@ -1,0 +1,43 @@
+<style>
+    @include('../view_css/find.css');
+</style>
+<div class="view-title f38 relative">
+    <a href="javascript:void(0);" class="absolute pay-btn f20 rechargeBtn">
+        <i class="icon"></i>
+        <em>0</em>
+    </a>
+    发现
+</div>
+<div id="banner" class="banner relative">
+    {{banner}}
+    <div id="point" class="banner-point absolute"></div>
+</div>
+<div class="index-line"></div>
+<div class="index-list-title" style="background-image:url('http://s-h5.52kouhong.com/upload/2018/ci/index-title.png');"></div>
+<div class="item-list">
+    <ul id="findList">
+        <!-- <li>
+            <a href="#newsContent">
+                <img class="lazy" src="" data-src="../res/15.jpg" alt="">
+                <h3>标题标题标题标题标题</h3>
+                <em class="hot-status f18"><i class="icon"></i>1234567</em>
+            </a>
+        </li> -->
+    </ul>
+</div>
+<!----分享提示-->
+<div class="shareDialog">
+    <div class="sharePic"></div>
+    <p class="shareTxt">邀好友，赚魅力币</p>
+</div>
+<!----浏览器分享-->
+<div id="broswerDialog" class="broswerDialog">
+    <div class="broswerCon">
+        <div class="t">分享提示</div>
+        <div class="close"></div>
+        <input id="shareTxt-copy" class="shareTxt-copy" />
+        <div id="broswerCopyBtn" class="broswerCopyBtn">
+            复制
+        </div>
+    </div>
+</div>

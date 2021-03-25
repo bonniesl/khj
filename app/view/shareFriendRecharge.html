@@ -1,0 +1,57 @@
+<style>
+    @include('../view_css/recharge.css');
+</style>
+<div class="view-title f38 relative">
+    <a id="goBack" href="javascript:void(0);" class="absolute back-btn f20">
+            <i class="icon"></i>
+        </a>
+    好友代充
+</div>
+<div class="rechargeBox">
+    <div class="rechargeBanner">
+        <div id="friendBanner"><div class="pic"></div> </div>
+        <div class="top">
+           
+        </div>
+    </div>
+    <div class="rechargeTxt">温馨提示：代充成功之后不能退款，请务必确认是由本人发起哦</div>
+    <div class="recMonList">
+        <ul id="friendRecharges" class="list">
+
+        </ul>
+        <a id="helpRecharge" class="okRechargeBtn" href="javascript:void(0);">火速支援</a>
+    </div>
+</div>
+<!---充值选择--->
+<div class="rechargeDialog">
+        <div class="redialogCon">
+            <div class="title">
+                <h2>确认付款</h2>
+                <p class="close icon"></p>
+            </div>
+            <div class="price">
+                ￥<p class="total">500.00</p>
+            </div>
+            <div class="payList">
+                <ul>
+                    <li id="wx" data-type="45">
+                        <div class="payico"></div>
+                        <div class="info">
+                            <p class="t">微信支付</p>
+                            <p class="c">推荐已安装微信的用户使用</p>
+                        </div>
+                        <div class="selIco cur"></div>
+                    </li>
+                    <li id="zfb" data-type="44">
+                        <div class="payico"></div>
+                        <div class="info">
+                            <p class="t">支付宝支付</p>
+                            <p class="c">推荐已安支付宝的用户使用</p>
+                        </div>
+                        <div class="selIco"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="payBtn-action">立即支付</div>
+        </div>
+    </div>

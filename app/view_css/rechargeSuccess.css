@@ -1,0 +1,31 @@
+#rechargeSuccess{
+    background-color: #fff;
+}
+.recSuccessBox .sucIcon{
+    width: 4.91rem;
+    height: 3.59rem;
+    background: url('../res/rechargeSuccess.png') no-repeat top center;
+    background-size: 4.91rem 3.59rem;
+    margin: 1.1rem auto .2rem auto;
+}
+.recSuccessBox .tit{
+    text-align: center;
+    color: #ec4a59;
+    font-size: .34rem;
+}
+.recSuccessBox p{
+    text-align: center;
+    font-size: .24rem;
+    color: #757575;
+    margin-top: .53rem;
+}
+.goIndex{
+    width: 2.02rem;
+    height: .6rem;
+    background: #EC4A58;
+    color: #fff;
+    line-height: .6rem;
+    text-align: center;
+    margin: .4rem auto;
+    font-size: 0.24rem;
+}

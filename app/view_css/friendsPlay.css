@@ -1,0 +1,210 @@
+/*好友帮玩*/
+#friendsPlay{
+    background: #f9f9f9;
+}
+.friendsPlay .top{
+    padding: 0.38rem 0 0.48rem 0.3rem;
+    position: relative;
+}
+.friendsPlay .top .advanter{
+    width: 1rem;
+    height: 1rem;
+}
+.friendsPlay .top .advanter>img{
+    width: 1rem;
+    height: 1rem;
+}
+.friendsPlay .top .talkTip{
+    position: absolute;
+    left:1.6rem;
+    top:0.8rem;
+    width: 4.3rem;
+    height: 0.87rem;
+    color: #f9f9f9;
+    font-size: 0.24rem;
+    text-align: left;
+    background: #ec4a58;
+    line-height: 0.4rem;
+    padding: 0 0.2rem;
+    border-radius: 0.1rem;
+    box-sizing: border-box
+}
+.friendsPlay .top .talkTip::after{
+    content: '';
+    position: absolute;
+    left: -0.12rem;
+    top: 0.14rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.12rem 0.12rem 0.12rem 0;
+    border-color: transparent #ec4a58 transparent transparent;
+}
+
+.friendsPlay .content .tit{
+    margin: 0.3rem auto 0;
+    width:1.76rem;
+    height:0.58rem;
+} 
+.friendsPlay .list{
+    padding-top: 0.3rem;
+}
+.friendsPlay .list ul{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.03rem 0 0.3rem;
+}
+.friendsPlay .list li{
+    width:2.12rem; 
+    height:2.67rem;
+    background: #ffffff;
+
+    margin:0 0.27rem 0.28rem 0;
+}
+.friendsPlay .list li a{
+    display: block;
+}
+.friendsPlay .list li .pic{
+    width:2.12rem;
+    height:2.12rem;
+}
+.friendsPlay .list li .pic>img{
+    width:2.12rem;
+    height:2.12rem;
+}
+.friendsPlay .list li .t{
+    color: #333333;
+    font-size:0.22rem;
+    text-align: center;
+    padding: 0 0.2rem;
+    height:0.55rem;
+    line-height: 0.55rem;
+}
+.friendsPlay-bottom{
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    width:7.5rem;
+    height:0.98rem;
+    padding: 0 0.3rem;
+    background: #ffffff;
+    -webkit-box-shadow: 0 -1px #ddd;
+	-moz-box-shadow: 0 -1px #ddd;
+	box-shadow: 0 -1px #ddd;
+    z-index: 99;
+    box-sizing: border-box;
+}
+.friendsPlay-bottom .fribtn{
+    display: block;
+    width: 1.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    background: #ec4a58;
+    color: #ffffff;
+    font-size: 0.24rem;
+    margin: 0.18rem 1.05rem 0 0;
+}
+.friendsPlay-bottom .fribtn:last-child{
+    margin-right: 0
+}
+
+/********求助他人*********/
+#helpOther{
+    background: #ffffff;
+}
+#helpOther .friendsPlay .content .tit{
+    width:2.04rem;
+} 
+.helpOther-bottom{
+    position: fixed;
+    bottom: 0;
+    width:7.5rem;
+    height: 3.78rem;
+    padding: 0 0.3rem;
+    background: #ffffff;
+    -webkit-box-shadow: 0 -1px #ddd;
+	-moz-box-shadow: 0 -1px #ddd;
+    box-shadow: 0 -1px #ddd;
+    line-height: 1;
+    z-index: 99;
+    box-sizing: border-box;
+}
+.helpOther-bottom .t{
+    padding: 0.3rem 0 0.28rem;
+}
+.helpOther-bottom .line{
+    display: flex;
+    margin-bottom: 0.4rem;
+    line-height: 1;
+}
+.helpOther-bottom p{
+    color: #333333;
+    font-size: 0.24rem;
+}
+.helpOther-bottom .price{
+    color: #ec4a58;
+    flex: 1;
+    text-align: right;
+}
+.helpOther-bottom .numprice{
+    position: relative;
+    flex: 1;
+    text-align: right;
+    overflow: hidden;
+    height: 0.29rem;
+    width:0.94rem;
+    line-height: 1;
+    font-size: 0;
+}
+.helpOther-bottom .numprice span{
+    display: inline-block;
+    vertical-align: middle
+}
+.helpOther-bottom .numprice span.addbtn{
+    background: url(../res/add.jpg) no-repeat 0 0 / 0.29rem 0.29rem;
+    width:0.29rem;
+    height: 0.29rem;
+    cursor: pointer;
+}
+.helpOther-bottom .numprice span.reducebtn{
+    background: url(../res/reduce.jpg) no-repeat 0 0 / 0.29rem 0.29rem;
+    width:0.29rem;
+    height: 0.29rem;
+    cursor: pointer;
+}
+.helpOther-bottom .numprice .num{
+    width: 0.36rem;
+    text-align: center;
+    line-height: 0.29rem;
+    color: #333333;
+    font-size: 0.24rem;
+    vertical-align: middle;
+    outline: none;
+    border: none;
+}
+.helpOther-bottom .line-last{
+    margin-top: 0.5rem;
+    display: flex;
+}
+.helpOther-bottom .line-last .c{
+    color: #333333;
+    font-size:0.2rem;
+    line-height: 0.4rem;
+    margin-top: -0.04rem;
+    width: 4.79rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+.helpOther-bottom .surebtn{
+    margin-left: 0.5rem;
+    width: 1.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    background: #ec4a58;
+    color: #ffffff;
+    font-size: 0.24rem;
+}

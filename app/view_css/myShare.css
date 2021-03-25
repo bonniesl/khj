@@ -1,0 +1,203 @@
+#myShare{
+    background: #f9f9f9;
+    padding-top: 0.8rem;
+}
+.myShare .banner{
+    width: 7.5rem;
+    height: 2.18rem;
+}
+.myShare .banner img{
+    width: 7.5rem;
+    height: 2.18rem;
+}
+.myShare .shareTop{
+    position: relative;
+    background: #ffffff;
+    height: 1.15rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.myShare .shareTop a{
+    display: inline-block;
+    width: 3.74rem;
+    height: 1.15rem;
+    line-height: 1.15rem;
+    text-align: center;
+    border-right:0.02rem solid #f9f9f9;
+}
+.myShare .shareTop a:last-child{
+    border-right: none
+}
+.myShare .shareTop .Invite .icon{
+    background: url(../res/allico.png) no-repeat 100% -1.45rem / 6.32rem 6.32rem;
+    width: 0.44rem;
+    height: 0.43rem;
+    display: inline-block;
+    vertical-align: middle
+}
+.myShare .shareTop .Poster .icon{
+    background: url(../res/allico.png) no-repeat 100% -1.99rem / 6.32rem 6.32rem;
+    width: 0.44rem;
+    height: 0.34rem;
+    display: inline-block;
+    vertical-align: middle
+}
+.myShare .shareTop .txt{
+    color: #333333;
+    font-size: 0.28rem;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0.24rem;
+}
+.myShare .myincome{
+    margin-top: 0.18rem;
+}
+.myShare .myincome .t{
+    background: #ffffff;
+    padding:0 0.48rem 0 0.16rem;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.myShare .myincome .t .tt{   
+     height: 0.75rem;
+     line-height: 0.75rem;
+    border-bottom: 1px solid #efeef3;
+}
+.myShare .myincome .t .icon{
+    margin-left: 0.14rem;
+    background-position: 100% -2.42rem;
+    width: 0.4rem;
+    height: 0.4rem;
+    vertical-align: middle
+}
+.myShare .myincome .t .txt{
+    color: #333333;
+    font-size: 0.34rem;
+    vertical-align: middle;
+    margin-left: 0.14rem
+}
+.myShare .myincome li{
+    height: 1.44rem;
+    background: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0.2rem 0;
+    margin-bottom: 0.1rem;
+}
+.myShare .myincome li .lficon{
+    width: 2.52rem;
+    text-align: center;
+    font-size: 0;
+    line-height: 1;
+    border-right: 1px solid #efeef3;
+}
+.myShare .myincome li .lficon img{
+    width: 0.8rem;
+    height: 0.8rem;
+    display: block;
+    margin:0.12rem auto 0.14rem;
+}
+.myShare .myincome li .lficon .txt{
+    color: #333333;
+    font-size: 0.28rem;
+}
+.myShare .myincome .rlicon{
+    width:4.96rem; 
+    line-height: 1;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.myShare .myincome .money1{
+    padding-left: 0.57rem;
+    padding-top: 0.26rem;
+    color: #333333;
+    font-size: 0.34rem;
+}
+.myShare .myincome .money1 span.red{
+    color: #ec4a59;
+    padding: 0 0.04rem;
+}
+.myShare .myincome .money2{
+    color: #939393;
+    font-size: 0.24rem;
+    padding-top: 0.3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+.myShare .myincome .money2 span{
+    padding-left: 0.57rem; 
+}
+.myShare .myincome .money1.blockline1{
+    padding-top: 0.13rem;
+}
+.myShare .myincome .money2.blockline span{
+    padding-left: 0;
+    width: 2rem;
+    text-align: center
+}
+.myShare .myincome .money2.blockline span>em{
+    display: block;
+    margin-top: 0.1rem
+}
+.myShare i{
+    font-style: normal;
+}
+
+.share-img{
+    position: fixed;
+    top:0;
+    width: 7.5rem;
+    font-size: 0;
+    height: 100%;
+    line-height: 1;
+    display: none;
+    z-index: 999;
+    overflow-y: auto;  
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: initial;
+   
+}
+.share-img .shareP{
+    min-height: 100%;
+    overflow-y: auto;   
+    -webkit-overflow-scrolling: touch;
+    -webkit-touch-callout: initial;
+}
+.share-img .icon {
+    width: .54rem;
+    height: .54rem;
+    background: url(../res/closeB.png) no-repeat center center / 0.34rem 0.34rem;
+    right: .13rem;
+    top: .13rem;
+}
+.share-img .picc{
+    width: 100%;
+    height: 100%;  
+    -webkit-touch-callout: initial;
+}
+.share-img .tabTxt{
+    width: 7.5rem;
+    height: 1.4rem;
+    background: #ffffff;
+    padding-top: 0.4rem;
+    text-align: center;
+    color: #000000;
+    font-size: 0.3rem;
+    box-sizing: border-box;
+}
+#qrcode{
+    position: absolute;
+    /* top: 6.1rem; */
+    left: 50%;
+    margin-left:-1.55rem;
+    width: 3.1rem;
+    height: 3.1rem;
+    text-align: center;
+    box-sizing: border-box;
+    display: none;
+ 
+}
+

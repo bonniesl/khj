@@ -1,0 +1,138 @@
+<style>
+    @include('../view_css/gameNumber.css');
+</style>
+<div class="elude-view absolute">
+    <div class="progress-box absolute">
+        <div class="cur">
+            <i>第一关</i>
+        </div>
+        <div>
+            <i>第二关</i>
+        </div>
+        <div>
+            <i>第三关</i>
+        </div>
+        <div>
+            <i>完成</i>
+        </div>
+    </div>
+    <div id="countDownBox" class="count-down absolute">
+        <div id="countDown"></div>
+    </div>
+    <!-- 游戏开始说明提示 -->
+    <div id="gameDesc" class="game-desc">
+        <div class="desc-view">
+            <div id="startBtn" class="start-btn"></div>
+        </div>
+    </div>
+    <!-- 数字区域 -->
+    <div id="numberBox" class="number-box absolute">
+        <div id="num_1"></div>
+    </div>
+    <div id="keyboards" class="keyboards absolute">
+        <i class="key_1"></i>
+        <i class="key_2"></i>
+        <i class="key_3"></i>
+        <i class="key_4"></i>
+        <i class="key_5"></i>
+        <i class="key_6"></i>
+        <i class="key_7"></i>
+        <i class="key_8"></i>
+        <i class="key_9"></i>
+        <i class="key_0"></i>
+    </div>
+    <!-- 关卡通过提示 -->
+    <div id="progressIcon" class="progress-icon absolute hide"></div>
+    <!-- 失败结束界面 -->
+    <div id="loseView" class="lose-view absolute hide">
+        <div class="box absolute play-more top_left_50">
+            <h6>闯关失败</h6>
+            <!-- <b class="getCoin">再玩00次，获得00魅力币</b> -->
+            <p>游戏提示：获得游戏积分0</p>
+            <button id="replay" class="absolute replay">再玩一次</button>
+            <button class="absolute get-help hide">好友帮玩</button>
+            <em class="f22" id="shareBtn2">邀好友加入可获25魅力币</em>
+            <i class="icon absolute closeSelf"></i>
+        </div>
+    </div>
+    <!-- 闯关成功界面 -->
+    <div id="winView" class="lose-view absolute win-view hide">
+        <div class="box absolute play-more top_left_50">
+            <h6>闯关成功</h6>
+            <b class="getCoin">恭喜您闯关成功，请前往选择色号!</b>
+            <button id="chooseColorBtn" class="absolute replay">选择色号</button>
+        </div>
+    </div>
+    <!-- 通关以后领取奖励界面 -->
+    <div id="rewards" class="rewards absolute hide">
+        <div class="top-banner"></div>
+        <div class="index-list-title" style="background-image:url('../res/game/choose-title.png');"></div>
+        <ul id="itemList" class="item-list">
+            <!-- <li>
+                <img class="lazy" src="" data-src="../res/15.jpg" alt="">
+                <h3 class="font-clip">标4545标题标题标题标题标题</h3>
+            </li> -->
+        </ul>
+        <div id="chooseLipstick" class="choose-lipstick fixed flex">
+            <img class="lazy relative" src="" alt="">
+            <div class="item-name">
+                <h6 class="font-clip">測試名稱測試名稱測試名稱測試名稱</h6>
+                <!-- <em class="coin">&yen;3000</em> -->
+            </div>
+            <button class="btn_red">确认领取</button>
+        </div>
+    </div>
+    <!-- 成功领取口红弹窗 -->
+    <div id="getReward" class="get-reward absolute">
+        <div class="box absolute top_left_50">
+            <i class="icon absolute closeSelf"></i>
+            <em class="title absolute">恭喜你成功领取</em>
+            <em class="title name absolute">迪奥999口红</em>
+            <img class="absolute" src="" alt="">
+            <p class="absolute">已为您将奖品放入了奖品盒，可以随时提取</p>
+            <button id="goOther" class="btn_red absolute go-other">去玩其它场次</button>
+            <button id="shareBtn" class="btn_red absolute">分享得魅力币</button>
+            <div id="rewardBoxBtn" class="reward-box-btn absolute"></div>
+        </div>
+        <div id="shareImg" class="share-img absolute">
+            <i class="icon absolute closeSelf"></i>
+            <img src="" alt="">
+            <p></p>
+        </div>
+    </div>
+</div>
+<!----分享提示-->
+<div id="shareDialogGame" class="shareDialogGame">
+    <img src="http://s-h5.52kouhong.com/upload/2018/ci/share.png" />
+</div>
+<!----分享提示-->
+<div class="shareDialogs">
+    <div class="sharePic"></div>
+    <p class="shareTxt">邀好友，赚魅力币</p>
+</div>
+<!---余额不足提示-->
+<div id="creditDialogs">
+    <div class="dialogCon">
+        <div class="close"></div>
+        <div class="tipsIco"></div>
+        <h2 class="title">余额不足</h2>
+        <p class="t">当前余额不足，赶快充值吧~</p>
+        <div class="reBtn">果断充值</div>
+        <div class="friendTips">
+            <p class="txt">友情提示</p>
+            <p class="txt"><span class="c">关注公众号，获取魅力币大礼包</span><a class="favBtn btn" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDc2MDY2NQ==&scene=126&bizpsid=0#wechat_redirect">立即关注</a></p>
+            <p class="txt"><span class="c">邀请好友，获取<em>25</em>魅力币</span><a href="javascript:void(0);" class="inviteBtn btn">立即邀请</a></p>
+        </div>
+    </div>
+</div>
+<!----浏览器分享-->
+<div id="broswerDialog1" class="broswerDialog">
+    <div class="broswerCon">
+        <div class="t">分享提示</div>
+        <div class="close"></div>
+        <input id="shareTxt-copy1" class="shareTxt-copy" />
+        <div id="broswerCopyBtn1" class="broswerCopyBtn">
+            复制
+        </div>
+    </div>
+</div>

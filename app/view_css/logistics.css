@@ -1,0 +1,109 @@
+/******物流详情*****/
+.logistics .top{
+    height: 1.43rem;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 0.02rem solid #f3f3f3;
+    box-sizing: border-box;  
+}
+.logistics .top .icon{
+    margin: 0.3rem 0 0 0.3rem;
+    width:0.83rem;
+    height: 0.83rem;
+    background-position: -3.62rem -1.22rem;
+}
+.logistics .top .info{
+    margin: 0.4rem 0 0 0.3rem;
+    line-height: 1;
+}
+.logistics .top .info .name,.logistics .top .info .nump{
+    color: #333333;
+    font-size: 0.24rem;
+}
+.logistics .top .info .nump{
+    margin-top: 0.18rem;
+}
+.logistics .top .info .copyb{
+    display: inline-block;
+    vertical-align: top;
+    width:0.75rem;
+    height:0.3rem;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.22rem;
+    color: #747474;
+    font-size: 0.2rem;
+    margin-left: 0.26rem;
+    border:0.02rem solid #747474;
+    background: #ffffff;
+    box-sizing: border-box;
+}
+.logistics .status{
+    padding: 0.46rem 0.3rem 0;
+}
+.logistics .status h2{
+    color: #333333;
+    font-size: 0.24rem;
+}
+.logistics .status .list{
+    padding-top: 0.56rem;
+}
+.logistics .status .list-l{
+    display: flex;
+    position: relative;
+    
+}
+.logistics .status .list-l .time{
+    position: absolute;
+    left: 0;
+    top:0;
+    color: #747474;
+    font-size: 0.24rem;
+    line-height: 1;
+}
+.logistics .status .list-l .time>span{
+    display: block;
+    margin-top: 0.16rem
+}
+.logistics .status .list-l .statu-txt{
+    position: relative;
+    margin-left: 1.19rem;  
+    padding-bottom: 0.56rem;
+    border-left:0.02rem solid #f3f3f3;
+   
+}
+.logistics .status .list-l .statu-txt .circle{
+    position: absolute;
+    top:0.28rem;
+    left:-0.07rem;
+    width: 0.13rem;
+    height: 0.13rem;
+    border-radius: 50%;
+    background: #c6c6c6;
+}
+.logistics .status .list-l .statu-txt .txt{
+    padding-left: 0.4rem;
+    color: #747474;
+    font-size: 0.24rem;
+    line-height: 0.66rem;
+}
+.logistics .status .list-l.list-complete .icon{
+    position: absolute;
+    top:0.12rem;
+    left:-0.25rem;
+    background-position: -3.62rem -2.17rem;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.logistics .status .list-l.list-way .icon{
+    position: absolute;
+    top:0.12rem;
+    left:-0.25rem;
+    background-position: -4.16rem -2.17rem;
+    width: 0.5rem;
+    height: 0.5rem;
+}
+.logistics .status .list-l:last-child .statu-txt{
+    padding-bottom: 0
+}

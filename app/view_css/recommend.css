@@ -1,0 +1,110 @@
+#recommend{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    background:#f56370;
+    z-index: 1000;
+    /* padding-top: 0.8rem; */
+    overflow-y: auto;  
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+}
+#recommend::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+}
+.recommend{
+    background: url(../res/recomdBg.jpg) no-repeat 0 0 / cover;
+    width: 7.5rem;
+    padding-top: 2.6rem;
+    margin: 0 auto;
+    padding-bottom: 0.3rem;
+}
+.timeTotal{
+    width:4rem;
+    margin: 0 auto 0.46rem;
+    text-align: center;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #fff;
+    font-size: 0.24rem;
+    color: #ffffff;
+    padding: 0.12rem 0;
+}
+.recommend li{
+    position: relative;
+    display: flex;
+    background: url(../res/recommend2.png) no-repeat 0 0 / 6.58rem 1.45rem;
+    width: 6.58rem;
+    height: 1.45rem;
+    margin: 0 auto 0.26rem;
+    padding: 0 0.2rem 0 0.86rem;
+    box-sizing: border-box;
+}
+.recommend li.complete{
+    background: url(../res/recommend1.png) no-repeat 0 0 / 6.58rem 1.45rem; 
+}
+.recommend li .reico{
+    background: url(../res/remoneyIco.png) no-repeat center center / 0.72rem 0.75rem;
+    width: 0.72rem;
+    height: 1.45rem;
+    display: inline-block;
+}
+.recommend li .reprize{
+    background: url(../res/6.png) no-repeat center center / 0.63rem 0.93rem;
+    width: 0.72rem;
+    height: 1.45rem;
+    display: inline-block;
+}
+.recommend li .info{
+    padding-left: 0.14rem;
+    line-height: 1;
+    width: 3.26rem;
+}
+.recommend li .info .money{
+    color: #f4586d;
+    font-size: 0.4rem;
+    padding-top: 0.3rem;
+}   
+
+.recommend li .per{
+    position: absolute;
+    bottom: 0.2rem;
+    left: 1.72rem;
+    color: #6b333b;
+    font-size: 0.24rem;
+    margin-top: 0.12rem;
+}
+.recommend li .info .per>span{
+    color: #ec4a59;
+}
+.recommend li .recbtn{
+    width: 1.39rem;
+    height: 0.53rem;
+    background: #ec4a59;
+    text-align: center;
+    line-height: 0.53rem;
+    color: #fff;
+    border-radius: 0.12rem;
+    margin-top: 0.3rem;
+    cursor: pointer;
+}
+.recommend li .recDisabled{
+    width: 1.39rem;
+    height: 0.53rem;
+    background: #ccc;
+    text-align: center;
+    line-height: 0.53rem;
+    color: #fff;
+    border-radius: 0.12rem;
+    margin-top: 0.4rem;
+    cursor: pointer;
+}
+.inviteBtn{
+    background: url(../res/invite.png) no-repeat 0 0 / 5.95rem 0.96rem;
+    width: 5.95rem;
+    height: 0.96rem;
+    margin: 0.46rem auto 0;
+}

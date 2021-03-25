@@ -1,0 +1,145 @@
+/******游戏打榜*****/
+
+.gamePlayList .top{
+    position: relative;
+    width: 7.5rem;
+    height:2.96rem;
+    overflow: hidden;
+}
+.gamePlayList .top img{
+    width: 7.5rem;
+    height:2.96rem
+}
+.gamePlayList .top .rule{
+    position: absolute;
+    top:.4rem;
+    right:0;
+    background: url("../res/rule.png") no-repeat 0 0 / 1.07rem 0.45rem; 
+    width:1.07rem;
+    height:0.45rem;
+    display: block;
+}
+.gamePlayList .wrap{
+    position: relative;
+    top:-1rem;
+    width:6.9rem;
+    margin: 0 auto;
+}
+.gamePlayList .wrap .topc{
+    position: relative;
+    width:6.9rem;
+    height:1.76rem;
+    background: #ffffff;
+    -webkit-box-shadow: 0 1px 0.09rem rgba(81,81,81,.08);
+	-moz-box-shadow: 0 1px 0.09rem rgba(81,81,81,.08);
+    box-shadow: 0 1px 0.09rem rgba(81,81,81,.08);
+    border-radius: 0.3rem;
+}
+.gamePlayList .wrap .topc .advanter{
+    float:left;
+    width:1.27rem;
+    height:1.27rem;
+    margin:0.28rem 0 0 0.28rem;
+}
+.gamePlayList .wrap .topc .advanter img{
+    width:1.27rem;
+    height:1.27rem;
+    border-radius: 50%;
+}
+.gamePlayList .wrap .topc .info{
+    float:left;
+    margin:0.5rem 0 0 0.27rem;
+    line-height: 1;
+    font-size: 0.26rem;
+}
+.gamePlayList .wrap .topc .info>.num,.gamePlayList .list li .intro .name{
+    color: #333333;
+}
+.gamePlayList .wrap .topc .info>.score{
+    color: #747474;
+    padding-top: 0.26rem;
+}
+.hitBtn{
+    position: absolute;
+    right: 0.2rem;
+    top:0.58rem;
+    width:1.6rem;
+    height:0.6rem;
+    color: #ffffff;
+    font-size: 0.26rem;
+    line-height: 0.6rem;
+    text-align: center;
+    background: #ec4a58;
+    border-radius: 0.2rem;
+}
+.gamePlayList .list li{
+    position: relative;
+    width:6.9rem;
+    border-bottom: 0.02rem solid #efeef3;
+    height: 1.45rem;
+    box-sizing: border-box;
+}
+.gamePlayList .list li:last-child{
+    border-bottom: none;
+}
+.gamePlayList .list li .pic{
+    position: relative;
+    width:1.92rem;
+    float:left;
+    padding-top: 0.41rem;
+}
+.gamePlayList .list li .icon,.gamePlayList .list li .num{  
+    height:0.67rem;
+    width:1.38rem;
+}
+.gamePlayList .list li.top-first .icon{
+    background-position:-0.02rem -5.23rem;
+}
+.gamePlayList .list li.top-second .icon{
+    background-position:-0.03rem -4.53rem;
+}
+.gamePlayList .list li.top-three .icon{
+    background-position:-0.03rem -3.83rem;
+}
+.gamePlayList .list li .icon>span,.gamePlayList .list li .num>span{
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 0.36rem;
+    line-height: 0.67rem;
+    letter-spacing: 0.04rem;
+    padding-left: 0.13rem;
+}
+.gamePlayList .list li .num>span{
+   font-weight: normal;
+   color: #333333;
+}
+
+.gamePlayList .list li .pic>img{
+    position: absolute;
+    left:0.76rem;
+    top:0.12rem;
+    width:1.15rem;
+    height: 1.15rem;
+    border: solid 0.05rem #fff;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.gamePlayList .list li .intro {
+    float:left;
+    width:3.2rem;
+    line-height: 1;
+    margin:0.4rem 0 0 0.25rem;
+    font-size: 0.26rem;
+}
+.gamePlayList .list li .intro .c{
+    color: #747474;
+    padding-top: 0.2rem;
+}
+.gamePlayList .list li .point{
+    position: absolute;
+    right:0.6rem;
+    top:0.58rem;
+    color: #333333;
+    font-size: 0.26rem;
+
+}

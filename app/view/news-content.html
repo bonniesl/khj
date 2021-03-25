@@ -1,0 +1,87 @@
+<style>
+    @include('../view_css/news-content.css');
+</style>
+<div class="view-title f38 fixed newsTop">
+    <a id="goBack" href="javascript:void(0);" class="absolute back-btn f20">
+        <i class="icon"></i>
+    </a>
+   <span class="newsT"></span>
+</div>
+<div class="new-content" id="newsC">
+    
+    <!--<div class="item-list">
+        <ul id="shopList">
+             <li>
+                <a href="javascript:void(0);">
+                    <img class="lazy" src="" alt="" data-src="../res/21.jpg">
+                </a>
+                <div class="right relative">
+                    <h3>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h3>
+                    <em class="price absolute">市场参考价格：￥99999</em>
+                    <a href="javascript:void(0);" class="btn_red get-btn absolute">立即赢取</a>
+                </div>
+            </li>
+        </ul>
+    </div>-->
+</div>
+<div id="" class="bottom-nav flex flexAlign fixed news-bottom-nav">
+    <div class="flexGrow">
+        <a  id="fav" data-id="" href="javascript:void(0);">
+            <i class="icon collect"></i>
+            <span>收藏</span>
+        </a>
+    </div>
+    <div class="flexGrow">
+        <a id="shareA"  href="javascript:void(0);">
+            <i class="icon share"></i>
+            <em>分享</em>
+        </a>
+    </div>
+</div>
+<div class="fixed items-btn relative"  id="shopMore">
+    <i class="icon absolute"></i>
+    商品<span id="num">99</span>
+</div>
+
+ <!-- 商品弹窗 -->
+ <div class="newsDialog" id="newsDialog">
+    <div class="mask"></div>
+    <div class="newsdialCon">
+        <div class="toptit">
+            <p class="t">文章中商品</p>
+            <p class="toggle" id="toggle">收起</p>
+        </div>
+        <div class="new-contentss"> 
+                <div class="item-list">
+                    <ul id="shopList">
+                        <!-- <li>
+                            <a href="javascript:void(0);">
+                                <img class="lazy" src="" alt="" data-src="../res/21.jpg">
+                            </a>
+                            <div class="right relative">
+                                <h3>标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题</h3>
+                                <em class="price absolute">市场参考价格：&yen;99999</em>
+                                <a href="javascript:void(0);" class="btn_red get-btn absolute">立即赢取</a>
+                            </div>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+    </div>
+</div>
+<!----分享提示-->
+<div class="shareDialog">
+    <div class="sharePic"></div>
+    <p class="shareTxt">邀好友，赚魅力币</p>
+</div>
+<!----浏览器分享-->
+<div id="broswerDialog" class="broswerDialog">
+    <div class="broswerCon">
+        <div class="t">分享提示</div>
+        <div class="close"></div>
+        <input id="shareTxt-copy" class="shareTxt-copy" />
+        <div id="broswerCopyBtn" class="broswerCopyBtn">
+            复制
+        </div>
+    </div>
+</div>

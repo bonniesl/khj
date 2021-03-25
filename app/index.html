@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,
+    user-scalable=no,viewport-fit=cover"> -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>口红姬</title>
+    <link rel="icon" href="res/webLogo/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://s-h5.52kouhong.com/webLogo/app-logo@57_57.png"/>
+    <link rel="manifest" href="http://s-h5.52kouhong.com/webLogo/manifest.json" />
+    <link rel="stylesheet" href="style/style.css?v=10020">
+    <script>
+        /**
+         * 以下这段代码是用于根据移动端设备的屏幕分辨率计算出合适的根元素的大小
+         * 当设备宽度为375(iPhone6)时，根元素font-size=100px; 依次增大；
+         * 限制当为设备宽度大于768(iPad)之后，font-size不再继续增大
+         * scale 为meta viewport中的缩放大小
+         */
+        (function (doc, win) {
+            var docEl = win.document.documentElement;
+            var resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize';
+            /**
+              * ================================================
+              *   设置根元素font-size
+              * 当设备宽度为375(iPhone6)时，根元素font-size=100px; 
+              */
+            var refreshRem = function () {
+                var clientWidth = win.innerWidth ||
+                    doc.documentElement.clientWidth ||
+                    doc.body.clientWidth;
+
+                if (!clientWidth) return;
+                var fz;
+                var width = clientWidth;
+                fz = 100 * (width > 750 ? 750 : width) / 750; //要修改，在手机上面有
+                docEl.style.fontSize = fz + 'px';
+
+            };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, refreshRem, false);
+            doc.addEventListener('DOMContentLoaded', refreshRem, false);
+            refreshRem();
+
+        })(document, window);
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?fdc46c396cc07656db4c1794e70bb39a";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+    </script>
+</head>
+
+<body>
+    <!--头部-->
+
+    <div id="root" class="page-container relative"></div>
+    <!-- 能用层层级也会相对比较高 -->
+    <div class="common-view absolute"></div>
+    <!---中奖播报-->
+    <div  class="prizePlay">
+        <span class="audioIco"></span>
+        <div id="scroll_div">
+            <div id="scroll_begin" class="prizeList">
+            
+            </div>
+            <!-- <div id="scroll_end"></div> -->
+        </div>
+    </div>
+
+    <!---登录-->
+    <div class="loginDialog">
+        <div class="mask"></div>
+        <div class="loginCon">
+            
+        </div>
+    </div>
+    
+    <div id="bottomNav" class="bottom-nav flex flexAlign fixed">
+        <div class="flexGrow">
+            <a href="javascript:;" class="index" data-href="#">
+                <i class="icon"></i>
+                <em>首页</em>
+            </a>
+        </div>
+        <div class="flexGrow">
+            <a href="javascript:;" class="find" data-href="#find">
+                <i class="icon"></i>
+                <em>发现</em>
+            </a>
+        </div>
+        <div class="flexGrow">
+            <a  href="javascript:;" class="personal" data-href="#personal">
+            <!-- <a id="personalBtn" href="javascript:void(0);" class="personal"> -->
+                <i class="icon"></i>
+                <em>我的</em>
+            </a>
+        </div>
+    </div>
+    <!-- <script src="https://cdn.bootcss.com/eruda/1.5.4/eruda.min.js"></script>
+    <script>eruda.init();</script> -->
+    
+    <script>   
+        if(location.host=="m.786g.com"){
+            document.write("<script src='http://tr.786g.com/log/online'><\/script>");   
+        }else{
+            document.write("<script src='http://tr.52kouhong.com/log/online'><\/script>");  
+        }
+    </script>
+    <script src="http://www.52kouhong.com/host.js"></script>
+    <div style="display:none"><script type="text/javascript" src="https://s5.cnzz.com/z_stat.php?id=1276088158&web_id=1276088158"></script></div>
+    <script src="library.js?v=10025"></script>
+    <script src="bundle.js?v=10025"></script>   
+    <script type="text/javascript" src="https://b.bdstatic.com/searchbox/icms/searchbox/js/swan-2.0.2.js"></script>
+    <script>swan.webView.postMessage({ data: window.navigator.userAgent});swan.webView.getEnv(function(res) { console.log(res.smartprogram) })</script>
+</body>
+</html>

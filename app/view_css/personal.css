@@ -1,0 +1,150 @@
+#personal{
+    background: #fff;
+}
+.mypagesBox{
+    width: 7.5rem;
+    padding-bottom: 0.98rem;
+}
+.myinner .myhead{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0.39rem 0.3rem 0.3rem;
+}
+.headportbox{
+    display: flex;
+    flex-direction: row;
+    
+}
+.myinner .myhead .headport{
+    width: 1.63rem;
+    height: 1.63rem;
+    margin-right: .4rem;
+}
+.myinner .myhead .headport img{
+    display: block;
+    width: 1.63rem;
+    height: 1.63rem;
+    border-radius: 100%;
+}
+.myinner .myhead .tit{
+    color: #333;
+    font-size: .4rem;
+    margin-top: .24rem;
+    line-height: 1
+}
+.myinner .myhead .tit h3{
+    margin-bottom: .2rem;
+}
+.myinner .myhead .tit p{
+    font-size: .24rem;
+    margin-top: 0.1rem;
+    color: #545454;
+}
+.myinner .myhead .regcahrgebtn{
+    width: 1.59rem;
+    height: .61rem;
+    text-align: center;
+    background: #EC4A58;
+    color: #fff;
+    line-height: .61rem;
+    font-weight: bold;
+    margin-top: .6rem;
+}
+.myinner .headIcon{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: .52rem; 
+    line-height: 1;
+}
+.myinner .headIcon li{
+    position: relative;
+    text-align: center;
+}
+.myinner .headIcon li em{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ed4850;
+    width: 0.12rem;
+    height: 0.12rem;
+    border-radius: 100%;
+    display: none;
+}
+#awardsBox em{
+    right: 0.1rem;
+    top:0.03rem
+}
+.myinner .headIcon .item .icon{
+    width: .62rem;
+    height: .62rem;
+    background-position: 0 -1.86rem;
+    margin: 0 auto;
+    margin-bottom: .16rem;
+}
+.myinner .headIcon .item p{
+    text-align: center;
+    font-size: .24rem;
+}
+.myinner .headIcon .item:nth-child(1) .icon{
+   background-position: -.62rem -1.86rem;
+}
+.myinner .headIcon .item:nth-child(2) .icon{
+   background-position: -1.24rem -1.86rem;
+}
+.myinner .headIcon .item:nth-child(3) .icon{
+   background-position: -1.86rem -1.86rem;
+}
+.myinner .headIcon .item:nth-child(4) .icon{
+   background-position: -2.48rem -1.86rem;
+}
+.mybanner{
+    width: 7.5rem;
+    height: 2.13rem;
+}
+.mybanner img{
+    width: 100%;
+    height: 2.11rem;
+}
+.myicon2{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #f9f9f9;
+}
+.myicon2 .itemIcon{
+    width: 33.3%;
+    height: 2.14rem;
+    line-height: 1;
+    border-right:1px solid #f9f9f9;
+    border-bottom: 1px solid #f9f9f9;
+    box-sizing: border-box;
+}
+.myicon2 .itemIcon:nth-child(4),.myicon2 .itemIcon:nth-child(5){
+    border-bottom: none;
+}
+.myicon2 .itemIcon .icon{
+    display: block;
+   width: .64rem;
+   height: .64rem;
+   background-position: 0 -2.56rem;
+   margin:0 auto;
+   margin-bottom: .15rem;
+   margin-top: .39rem;
+}
+.myicon2 .itemIcon p{
+    text-align: center;
+    font-size: 0.24rem;
+    color: #333;
+}
+.myicon2 .itemIcon:nth-child(2) .icon{
+   background-position: -.64rem -2.56rem;
+}
+.myicon2 .itemIcon:nth-child(3) .icon{
+   background-position: -1.28rem -2.56rem;
+}
+.myicon2 .itemIcon:nth-child(4) .icon{
+   background-position: -1.92rem -2.56rem;
+}
+.myicon2 .itemIcon:nth-child(5) .icon{
+   background-position: -2.56rem -2.56rem;
+}

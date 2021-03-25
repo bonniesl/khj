@@ -1,0 +1,62 @@
+.integralDetailBox{
+    width: 7.5rem;
+}
+.integralDetailBox .bannerbox,
+.integralDetailBox .bannerbox img{
+    display: block;
+    width: 100%;
+    height: 3.75rem;
+}
+.integralDetailBox .integBody{
+    margin:.3rem;
+}
+.integralDetailBox .integBody .titlebox{
+    height: 1.3rem;
+    border-bottom: 1px solid #ddd;
+    font-size: .28rem;
+    margin-bottom: .26rem;
+} 
+.integralDetailBox .integBody .titlebox .title{
+    margin-bottom: .2rem;
+}
+.integralDetailBox .integBody .titlebox .tip{
+    display: flex;
+    flex-direction: row;
+}
+.integralDetailBox .integBody .titlebox .tip dd:first-child{
+    color: #fe0e4b;
+    margin-right: .42rem;
+}
+.integralDetailBox .integBody .titlebox .tip dd:nth-child(2){
+    color: #747474;
+    font-size: .26rem;
+}
+.integralDetailBox .integBody .formto{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.integralDetailBox .integBody .formto dd:first-child{
+    font-size: .26rem;
+    margin-right: .22rem;
+}
+.integralDetailBox .integBody .formto dd:last-child{
+    color: #747474;
+    font-size: .22rem;
+}
+.integralDetailBox .integBody .inteTitle{
+    font-size: .3rem;
+    margin-bottom: .34rem;
+    margin-top: .3rem;
+}
+.formtobox{
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .26rem;
+}
+.integralDetailBox .integBody .interart{
+    line-height: .4rem;
+}
+
+
+

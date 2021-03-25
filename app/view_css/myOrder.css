@@ -1,0 +1,84 @@
+#myOrder{
+    background: #fff;
+    padding-top: 0.8rem;
+}
+.myOrder-Wrap{
+    padding: 0 0.3rem;
+}
+.myOrder-Wrap li{
+    margin-bottom: 0.2rem;
+}
+.myOrder-Wrap li .top{
+    display: flex;
+    height: 0.86rem;
+    line-height: 0.86rem;
+    font-size: 0.24rem
+}
+.myOrder-Wrap li .top .stat{
+    color: #ec4a58;
+    flex: 1;
+    text-align: right
+}
+.myOrder-Wrap li .con{ 
+    -webkit-box-shadow: 0 0 0.06rem rgba(81,81,81,.08);
+	-moz-box-shadow: 0 0 0.06rem rgba(81,81,81,.08);
+	box-shadow: 0 0 0.06rem rgba(81,81,81,.08);
+}
+.myOrder-Wrap li .infot{
+    display: flex;
+    position: relative;
+    height: 2.05rem;
+    margin-bottom: 0.2rem;
+}
+.myOrder-Wrap li .con .pic{
+    width: 2.05rem;
+    height: 2.05rem;
+}
+.myOrder-Wrap li .con .pic>img{
+    width: 2.05rem;
+    height: 2.05rem;
+}
+.myOrder-Wrap li .con .info{
+    position: relative;
+    margin-left: 0.3rem;
+    width:4.12rem; 
+}
+.myOrder-Wrap li .con .info .t{
+    padding-top: 0.2rem;
+    color: #333333;
+    font-size: 0.24rem;
+    line-height: 0.53rem;
+    word-break: break-all;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+}
+.myOrder-Wrap li .con .info .price{
+    position: absolute;
+    bottom: 0.07rem;
+    left: 0;
+    font-size: 0.24rem;
+    color: #ec4a58;
+}
+.myOrder-Wrap li .con .bottom{
+    height: 1.05rem;
+    text-align: right;
+    padding-right: 0.18rem;
+    color: #333333;
+    font-size: 0.24rem;
+}
+.myOrder-Wrap li .con .bottom span{
+    padding-top: 0.5rem;
+    margin-right: 0.38rem;
+}
+.myOrder-Wrap li .con .bottom .logis-btn{
+    margin-top: 0.36rem;
+    display: inline-block;
+    width:1.54rem;
+    height: 0.48rem;
+    text-align: center;
+    line-height: 0.48rem;
+    border: 0.02rem solid #707070;
+    border-radius: 0.4rem;
+}

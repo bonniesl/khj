@@ -1,0 +1,50 @@
+/******消息详情*****/
+#newsInfo{
+    background: #fff;
+    padding-top: 0.8rem;
+}
+.newsInfo{
+    padding: 0 0.3rem;
+}
+.newsInfo .newst{
+    position: relative;
+    width:6.9rem;
+    padding: 0.26rem 0 0.28rem 0;
+    border-bottom: 0.02rem solid #efeef3;
+    line-height: 1;
+}
+.newsInfo .newst .t{
+    padding: 0 0 0 0.18rem;
+    font-size: 0.28rem;
+    color: #333333;
+}
+.newsInfo .newst .time{
+    position: absolute;
+    right:0.14rem;
+    top:0.36rem;
+    font-size: 0.24rem;
+    color: #a08686;
+}
+.newsInfo .newst .from{
+    padding: 0.26rem 0 0 0.18rem;
+    font-size: 0.24rem;
+    color: #747474;
+}
+.newsInfo .newsc{
+    padding: 0.26rem 0.18rem 0;
+    line-height: 0.52rem;
+}
+.newsInfo .newsc p{
+    color: #747474;
+    font-size: 0.24rem;
+}
+.newsInfo .recebtn{
+    margin: 0.88rem auto 0;
+    width:1.6rem;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    background: #ec4a58;
+    color: #fff;
+    display: block;
+}

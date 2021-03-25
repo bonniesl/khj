@@ -1,0 +1,201 @@
+#recommendTips{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    background:#520c07;
+    z-index: 1000;
+    overflow-y: auto;  
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+}
+#recommendTips::-webkit-scrollbar {
+    width:0px;
+    height:0px;
+}
+.recommendTips{
+    background: url(../res/recomdGiftBg.jpg) no-repeat 0 0 / 7.5rem 100%;
+    width: 7.5rem;
+    padding-top: 2.12rem;
+    margin: 0 auto;
+    padding-bottom: 0.16rem;
+}
+.recommendTop{
+    background: url(../res/recomK1.png) no-repeat 0 0 / 7.04rem 3.98rem;
+    width: 7.04rem;
+    height:3.98rem;
+    margin: 0 auto;
+    line-height: 1;
+    font-size: 0;
+}
+.recommendTop .title{
+    padding-top: 0.24rem;
+    font-size: 0.24rem;
+    line-height: 0.5rem;
+    color: #d78d43;
+    text-align: center;
+}
+.recommendTop .title span{
+    display: block
+}
+.recommendTop .titRed{
+    padding-top: 0.55rem;
+    color: #e9443c;
+    font-size: 0.34rem;
+}
+.processTop{
+    position: relative;  
+    width: 5.76rem;  
+    margin: 0.3rem auto 0;
+    height: 0.9rem;
+}
+.processTop .processLine{
+    position: relative;
+    background: url(../res/processBg.png) no-repeat 0 0 / 5.65rem 0.41rem;
+    width: 5.65rem;
+    height: 0.41rem;
+    margin: 0 auto;
+}
+.processTop .processLine .processCur{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(../res/processBg-cur.png) no-repeat 0 0 / 5.65rem 0.41rem;
+    width: 5.65rem;
+    height: 0.41rem;
+}
+.processTop .processLine .processCur::after{
+    content: '';
+    background: url(../res/processRight.png) no-repeat center center / 0.27rem 0.31rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0.27rem;
+    height: 0.41rem;
+}
+.processTop .processtxtTip{
+    position: absolute;
+    top: 0.74rem;
+    left: 0;
+    width: 5.76rem; 
+    display: flex;
+}
+.processTop .processtxtTip .begin{
+    color: #ef381f;
+    font-size: 0.24rem;
+    width: 10%;
+}
+.processTop .processtxtTip .middle{
+    background: url(../res/processFix.png) no-repeat 0 0 / 0.81rem 0.6rem;
+    width: 0.8rem;
+    height: 0.6rem;
+    position: absolute;
+    bottom:-0.04rem; 
+    line-height: 1;
+    left: 70%;
+}
+.processTop .processtxtTip .middle span{
+    padding-top: 0.26rem;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.24rem;
+    display: block
+}
+.processTop .processtxtTip .end{
+    color: #cb945f;
+    font-size: 0.24rem;
+    width: 90%;
+    text-align: right;
+}
+.processTop .helpBtn{
+    background: url(../res/helpBtn.png) no-repeat 0 0 / 5.47rem 0.88rem;
+    width: 5.47rem;
+    height: 0.88rem;
+    margin: 0.9rem auto 0;
+    font-size: 0.36rem;
+    text-align: center;
+    line-height: 0.88rem;
+	color: #923519;
+	text-shadow: 0 1px 1px rgba(255,255,255,.82);
+}
+.recommendMiddle{
+    background: url(../res/recomK1.png) no-repeat 0 0 / 7.04rem 3.13rem;
+    width: 7.04rem;
+    height:3.13rem;
+    margin: 0.36rem auto;
+    line-height: 1;
+    font-size: 0;  
+}
+.recommendMiddle .null{
+    color: #cb945f;
+    line-height: 3.13rem;
+    font-size: 0.3rem;
+    text-align: center;
+}
+.recommendMiddle-scroll{
+    width: 6.9rem;
+    padding: 0.28rem 0 0 0.32rem;
+    box-sizing: border-box;
+}
+.recommendMiddle ul{
+   
+    margin: 0 auto;
+    height: 2.48rem;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch; 
+
+}
+/* 针对缺省样式 (必须的) */
+.recommendMiddle ul::-webkit-scrollbar {
+    width: 0.12rem;
+    height:0px;
+}
+/* 滚动条的滑轨背景颜色 */
+.recommendMiddle ul::-webkit-scrollbar-track {
+    background-color: #eeb572;
+    border-radius:0.05rem;
+}
+/* 滑块颜色 */
+.recommendMiddle ul::-webkit-scrollbar-thumb {
+    background-color: #eeb572;
+    border-radius:0.2rem;
+}
+/*内层轨道的颜色*/
+.recommendMiddle ul::-webkit-scrollbar-track-piece{
+    background-color:#fff;
+    border-radius:0.05rem;
+}
+/* 滑轨两头的监听按钮颜色 */
+.recommendMiddle ul::-webkit-scrollbar-button {
+    background-color:#eeb572;
+    width:0;
+    height:0;
+}
+/* 横向滚动条和纵向滚动条相交处尖角的颜色 */
+.recommendMiddle ul::-webkit-scrollbar-corner {
+    background-color: black;
+}
+
+.recommendMiddle li{
+    display: flex;
+    color: #cb945f;
+    font-size: 0.22rem;
+    margin-bottom: 0.2rem;  
+}
+.recommendMiddle li .lf{
+    width: 4.56rem;
+}
+.recommendBottom{
+    padding-left: 0.28rem
+}
+.recommendBottom p{
+    color: #cb945f;
+    font-size: 0.2rem;
+    line-height: 0.4rem;
+}
+.recommendBottom p.tit{
+    font-size: 0.3rem;
+    margin-bottom: 0.2rem;
+}

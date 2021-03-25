@@ -1,0 +1,139 @@
+<style>
+    @include('../view_css/gameInner.css');
+</style>
+<div class="view-title f38 relative">
+    <a id="goBack" href="javascript:void(0);" class="absolute back-btn f20">
+        <i class="icon"></i>
+    </a>
+    口红姬
+</div>
+
+<div class="innerGnameBox">
+    <!-- <div class="innerBanner"><img src="res/gameInner-txt1.png" /></div>
+    <div class="gameInner-Content">
+        <div class="game-Tab">
+            <ul>
+                <li class="cur">闯关说明</li>
+                <li>奖品预览</li>
+            </ul>
+        </div>
+        <div class="game-Tabcon">
+            <div class="wrapCon" style="display:block">
+                <div class="gameC-banner swiper-container">
+                    <div class="swiper-wrapper">
+                        <a class="swiper-slide">
+                            <div class="swCon">
+                                <div class="top">
+                                    <p class="t"><img src="../res/txt1.png" /></p>
+                                    <p class="tryBtn">试玩</p>
+                                </div>
+                                <img src="../res/game1.png">
+                            </div>
+                            <div class="gameTips">
+                                <p class="txt">越是简单的游戏需要的智商越高哦~</p>
+                            </div>
+                        </a>
+                        <a class=" swiper-slide">
+                            <div class="swCon">
+                                <div class="top">
+                                    <p class="t"><img src="../res/txt2.png" /></p>
+                                    <p class="tryBtn">试玩</p>
+                                </div>
+                                <img src="../res/game2.png">
+                            </div>
+                            <div class="gameTips">
+                                <p class="txt">游戏已经够简单，我只能帮你到这里了</p>
+                            </div>
+                        </a>
+                        <a class=" swiper-slide">
+                            <div class="swCon">
+                                <div class="top">
+                                    <p class="t"><img src="../res/txt3.png" /></p>
+                                    <p class="tryBtn">试玩</p>
+                                </div>
+                                <img src="../res/game3.png">
+                            </div>
+                            <div class="gameTips">
+                                <p class="txt">据说手速越快的人，得口红的几率越高哦~~</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+               
+            </div>
+            <div class="wrapCon">
+                <div class="prize">
+                    <img src="../res/16.jpg" />
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <div id="banner" class="banner relative">
+        {{banner}}
+       <div id="point" class="banner-point absolute"></div>
+    </div>
+    <div class="gameinfoTip"></div> -->
+
+    <!-- <div class="gameinnerCont">
+        <div class="title"></div>
+        <ul id="contBox" class="contBox">
+             <li class="item">
+                <img src="../res/15.jpg" alt="">
+                <p>迪奥999烈焰蓝金</p>
+            </li> 
+        </ul>
+    </div> -->
+
+
+</div>
+<div class="gameInnerBottom">
+    <ul class="left">
+        <li id="fav" class="item">
+            <i class="icon shareFavico"></i>
+            <span>收藏</span>
+        </li>
+        <li id="shareA" class="item">
+            <i class="icon"></i>
+            <span>分享</span>
+        </li>
+        <li id="rechargeBtn" class="item">
+            <i class="icon"></i>
+            <span>充值</span>
+        </li>
+    </ul>
+    <div id="gameStartBtn" class="right">开始随机闯关</div>
+</div>
+<!----分享提示-->
+<div class="shareDialog">
+    <div class="sharePic"></div>
+    <p class="shareTxt">邀好友，赚魅力币</p>
+</div>
+<!---余额不足提示-->
+<div id="creditDialog">
+    <div class="dialogCon">
+        <div class="close"></div>
+        <div class="tipsIco"></div>
+        <h2 class="title">余额不足</h2>
+        <p class="t">当前余额不足，赶快充值吧~</p>
+        <div class="reBtn">果断充值</div>
+        <div class="friendTips">
+            <p class="txt">友情提示</p>
+            <p class="txt txtFav1"><span class="c">关注公众号，获取魅力币大礼包</span><a class="favBtn btn" href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=MzU4NDc2MDY2NQ==&scene=126&bizpsid=0#wechat_redirect">立即关注</a></p>
+            <p class="txt"><span class="c">邀请好友，获取<em>25</em>魅力币</span><a href="javascript:void(0);" class="inviteBtn btn">立即邀请</a></p>
+        </div>
+    </div>
+</div>
+<!----浏览器分享-->
+<div id="broswerDialog" class="broswerDialog">
+    <div class="broswerCon">
+        <div class="t">分享提示</div>
+        <div class="close"></div>
+        <input id="shareTxt-copy" class="shareTxt-copy" />
+        <div id="broswerCopyBtn" class="broswerCopyBtn">
+            复制
+        </div>
+    </div>
+</div>

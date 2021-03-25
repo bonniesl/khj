@@ -1,0 +1,108 @@
+
+#addresses{
+    padding-top: 0.8rem;
+}
+/******地址列表*****/
+.item-list {
+    /* padding-top: .42rem; */
+    overflow-x: hidden;
+    padding-bottom: 0.95rem;
+}
+
+.item-list li  {
+    overflow: hidden;
+}
+
+.item-list .wrapper {
+    position: relative;
+    background-color: #fff;
+    width: 7.5rem;
+    height: 1.33rem;
+    margin: 0.23rem 0 0.13rem 0;
+    padding: 0.17rem 0;
+    display: table;
+    transition: transform 0.3s ease;
+    line-height: 1;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.item-list li .left {
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-list li .left .addr_icon {
+    width: 0.55rem;
+    height: 0.55rem;
+    background-position: -1.24rem -3.23rem;
+    margin-left: 0.3rem;
+}
+
+.item-list li .content {
+    display: table-cell;
+    vertical-align: middle;
+    width: 5.54rem;
+    margin-left: 0.18rem;
+}
+
+.item-list li .content .info {
+    height: 0.44rem;
+}
+
+.item-list li .content .name {
+    color: #333;
+    font-size: 0.28rem;
+}
+
+.item-list li .content .phone {
+    color: #747474;
+    font-size: 0.22rem;
+}
+
+.item-list li .content .detail {
+    color: #333;
+    font-size: 0.28rem;
+    line-height: 0.4rem;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+}
+
+.item-list li .content .detail .type {
+    background-color: #ffacac;
+    color: #fff;
+    padding: 0 0.2rem;
+    margin-right: 0.2rem;
+}
+
+.item-list li .right {
+    border-left: 1px solid #747474;
+    padding-right: 0.3rem;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.item-list li .right span {   
+    color: #747474;
+    font-size: 0.28rem;
+    margin-left: 0.09rem;
+}
+
+.add_addr_btn {
+    height: 0.95rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    line-height: 0.95rem;
+    background-color: #ec4a58;
+    color: #fff;
+    font-size: 0.3rem;
+}

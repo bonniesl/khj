@@ -1,0 +1,53 @@
+/* 积分兑换 */
+.integralBox{
+    min-height: 12.48rem;
+    background: #f9f9f9;
+}
+.integralListBox{
+    width: 7.5rem;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.integralBox .recomTit{
+    display: flex;
+    flex-direction: row;
+    margin-left: .3rem;
+    padding-top: .3rem;
+    font-size: .28rem;
+}
+
+.integralBox .recomTit p{
+    color: #fe0e4b;
+    margin-left: .1rem;
+}
+.integralList{
+   width: 3.28rem;
+   margin-left:.3rem;
+   margin-bottom:.3rem;
+   margin-top: .2rem;
+    background: #fff;
+}
+.integralList .img{
+    width: 3.28rem;
+    height: 2.24rem;
+}
+.integralList .img img{
+    display: block;
+    width:100%;
+    height: 2.24rem;
+}
+.integralList .title{
+    margin-top: .15rem;
+
+}
+.integralList .title h3.font-clip{
+    width: 3rem;
+    margin-left: .2rem;
+}
+.integralList .title p.sc{
+    font-size: .18rem;
+    color: #fe0e4b;
+    margin: .2rem;
+    margin-top: .1rem;
+}

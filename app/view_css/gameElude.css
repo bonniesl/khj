@@ -1,0 +1,594 @@
+#gameElude {
+    background-image: url('../res/elude/game-bg.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-color: #fff;
+    height: 100%;
+    min-height: 100%;
+    padding-top: 0 !important;
+    width: 100%;
+    height: auto;
+}
+/****分享弹窗***/
+.shareDialogGame{
+    position: absolute;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.5);
+     width: 100%;
+     height: 100%;
+     z-index: 9999;
+     display: none;
+    
+   }
+   .shareDialogGame img{
+       position: absolute;
+       left:50%;
+       top:8%;
+       width: 4.7rem;
+       height: 4.38rem;
+       margin-left:-2.35rem;
+       z-index: 100;
+   }
+
+/* 游戏界面 */
+.elude-view {
+    width: 100%;
+    height: 100%;
+}
+
+.progress-box{
+    padding-top: .39rem;
+    padding-left: .20rem;
+}
+.progress-box div{
+    width: 1.57rem;
+    height: .5rem;
+    background-image: url(../res/elude/anniu.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: .25rem;
+    font-size: .26rem;
+}
+
+.progress-box i{
+    display: inline-block;
+    width: .5rem;
+    height: .5rem;
+    font-style: normal;
+    text-align: center;
+    color: #fd5e9b;
+    line-height: .5rem;
+    float: left;
+}
+.progress-box i + i{
+    width: 1rem;
+    color: #fff;
+}
+
+.progress-box div.cur{
+    background-image: url(../res/elude/hover.png);
+}
+
+.progress-box div.cur i{
+    color: #fff;
+}
+
+.progress-box div.cur i+i{
+    color: #fd5e9b;
+}
+
+.count-down{
+    z-index: 10;
+    left: .68rem;
+    top: 1.6rem;
+    background-image: url(../res/elude/count-down.png);
+    background-size: 6.15rem .82rem;
+    background-repeat: no-repeat;
+    width: 6.15rem;
+    height: .82rem;
+    transition: 0.3s ease width;
+}
+.count-down i{
+    display: inline-block;
+    font-style: normal;
+    width: .8rem;
+    height: .8rem;
+    text-align: center;
+    line-height: .8rem;
+    font-size: .36rem;
+    color: #fd5e9b;
+}
+
+.item-1{
+    display: inline-block;
+    width: .71rem;
+    height: .58rem;
+    background: url(../res/elude/item-1.png) no-repeat;
+    background-size: contain;
+    /* transform: translateY(-) */
+}
+.item-2{
+    display: inline-block;
+    width: .83rem;
+    height: .69rem;
+    background: url(../res/elude/item-2.png) no-repeat;
+    background-size: contain;
+}
+.item-3{
+    display: inline-block;
+    width: .77rem;
+    height: .68rem;
+    background: url(../res/elude/item-3.png) no-repeat;
+    background-size: contain;
+}
+
+.item-box{
+    z-index: 1;
+    top: 1.4rem;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    moz-user-select: -moz-none; 
+    -moz-user-select: none; 
+    -o-user-select:none; 
+    -khtml-user-select:none; 
+    -webkit-user-select:none; 
+    -ms-user-select:none; 
+    user-select:none;
+}
+
+.lipstick{
+    width: .93rem;
+    height: .93rem;
+    background: url(../res/elude/elude-item.png) no-repeat;
+    background-size: contain;
+}
+
+/****失败界面****/
+.lose-view {
+    top: 0;
+    text-align: center;
+    z-index: 1000;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.lose-view .box {
+    width: 5rem;
+    height: 4rem;
+    background-color: #fff;
+    border-radius: .1rem;
+    margin: -2rem 0 0 -2.5rem;
+}
+
+.lose-view h6 {
+    color: #EC4A58;
+    font-size: .36rem;
+    padding: .22rem 0;
+}
+
+.lose-view p {
+    padding-top: .24rem;
+    font-size: .24rem;
+    color: #982c42;
+}
+
+.lose-view button {
+    width: 2.76rem;
+    height: .64rem;
+    line-height: .64rem;
+    font-size: .24rem;
+    top: 2.05rem;
+    left: 50%;
+    margin-left: -1.38rem;
+    color: #fff;
+    background-color: #EC4A58;
+    border-radius: .1rem;
+}
+
+.lose-view .get-help {
+    top: 2.98rem;
+}
+
+.lose-view .icon {
+    width: .54rem;
+    height: .54rem;
+    background-position: -1.9rem 0;
+    right: .1rem;
+    top: .1rem;
+}
+
+.lose-view em {
+    color: #EC4A58;
+    display: inline-table;
+    margin-top: 1.8rem;
+    border-bottom: 1px solid #EC4A58;
+}
+
+/* 成功的提示小界面  继承失败界面 */
+.win-view .getCoin{
+    padding-top: .5rem;
+    display: inline-block;
+}
+
+.play-more em {
+    display: none;
+}
+
+.play-more button {
+    top: 2.7rem;
+}
+
+.play-more p {
+    padding-top: .3rem;
+}
+
+.play-more b {
+    font-weight: normal;
+    padding-top: .1rem;
+    font-size: .28rem;
+    color: #EC4A58;
+}
+
+
+
+/* 成功通关以后奖励列表 */
+.rewards {
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    z-index: 1001;
+    padding-bottom: .4rem;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.top-banner {
+    background-image: url(../res/game/reward-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 7.5rem;
+    height: 2.3rem;
+}
+
+.index-list-title {
+    background-size: 1.76rem .58rem;
+}
+
+.item-list {
+    margin: 0 auto;
+    width: 6.9rem;
+    height: auto;
+    overflow-y: hidden;
+    padding-bottom: .5rem;
+}
+
+.item-list li {
+    background-color: #fff;
+    width: 2.12rem;
+    height: 2.7rem;
+    overflow: hidden;
+    float: left;
+    margin-bottom: .34rem;
+    margin-right: .27rem;
+    transition:all 0.3s ease;
+    box-sizing:border-box;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.item-list li.cur{
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow:0px 0px 5px rgba(0, 0, 0, .8);
+}
+
+.item-list li:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+}
+
+.item-list img {
+    width: 2.12rem;
+    height: 1.85rem;
+    height: auto;
+    float: left;
+}
+
+.item-list h3 {
+    float: left;
+    text-align: center;
+    float: left;
+    font-size: .22rem;
+    color: #333;
+    line-height: .6rem;
+    width: 100%;
+}
+
+.choose-lipstick {
+    box-sizing: content-box;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    height: .98rem;
+    bottom: -2rem;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.choose-lipstick img {
+    box-shadow:0px 0px 10px #333333;
+    width: 2.12rem;
+    left: .06rem;
+    height: 2.12rem;
+    bottom: 1.24rem;
+    box-sizing: content-box;
+    border: 1px solid #ddd;
+    float: left;
+}
+
+.choose-lipstick .item-name {
+    float: left;
+    width: 3rem;
+    margin: .2rem 0 0 .4rem;
+}
+
+.choose-lipstick .btn_red {
+    margin: .19rem .3rem 0 0;
+    float: right;
+}
+
+.choose-lipstick.fadeIn {
+    bottom: 0;
+    opacity: 1;
+}
+
+/* 成功领取奖励弹窗 */
+.get-reward {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1002;
+}
+
+.get-reward .box {
+    width: 5.75rem;
+    height: 8.5rem;
+    background-color: #fff;
+    background-image: url(../res/game/redialog.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+    border-radius: .3rem;
+    /* overflow: hidden; */
+    display: inline-block;
+    margin: -4.25rem 0 0 -2.875rem;
+}
+
+.get-reward .icon {
+    width: .54rem;
+    height: .54rem;
+    background-position-x: -1.9rem;
+    right: .13rem;
+    top: .13rem;
+}
+
+.get-reward em {
+    width: 100%;
+    font-size: .36rem;
+    color: #dd3254;
+    text-align: center;
+    top: .6rem;
+}
+
+.get-reward em.name {
+    top: 1.24rem;
+}
+
+.get-reward img {
+    width: 2.61rem;
+    height: 2.61rem;
+    top: 2.9rem;
+    border: .02rem solid #333;
+    left: 50%;
+    margin-left: -1.305rem;
+}
+
+.get-reward p {
+    top: 5.9rem;
+    width: 100%;
+    text-align: center;
+}
+
+.get-reward .btn_red {
+    width: 2.75rem;
+    bottom: .35rem;
+    left: 50%;
+    margin-left: -1.35rem;
+    border-radius: .1rem;
+}
+.get-reward .go-other{
+    bottom: 1.2rem;
+}
+
+.share-img{
+    width: 100%;
+    height: 100%;
+    display: none;
+    -webkit-touch-callout: initial;
+}
+
+.share-img img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    -webkit-touch-callout: initial;
+}
+
+.reward-box-btn{
+    width: .4rem;
+    height: 1rem;
+    background-image: url('../res/game/rewardBoxBtn.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: .3rem;
+    left: -0.4rem;
+}
+
+/* 进度提示icon */
+.progress-icon{
+    width: 1.87rem;
+    height: 1.29rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 50%;
+    top: 30%;
+    margin-left: -0.98rem;
+    z-index: 10;
+}
+
+.progress-icon.icon_1{
+    background-image: url(../res/elude/progress_1.png);
+}
+.progress-icon.icon_2{
+    background-image: url(../res/elude/progress_2.png);
+}
+.progress-icon.icon_3{
+    background-image: url(../res/elude/progress_3.png);
+}
+/*余额不足*/
+#creditDialogs{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    line-height: 1;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: none;
+}
+#creditDialogs .close{
+  position: absolute;
+  right: 0.22rem;
+  top: 0.2rem;
+  background: url(../res/close.png) no-repeat 0 0 / 0.43rem 0.43rem;
+  width: 0.43rem;
+  height: 0.43rem;
+}
+#creditDialogs .dialogCon{
+    background: #ffffff;
+    width: 4.98rem;
+    height: 5.54rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -2.77rem 0 0 -2.49rem;
+    z-index: 100;
+}
+#creditDialogs .tipsIco{
+    background: url(../res/tipsIco.png) no-repeat 0 0 / 1.15rem 0.97rem;
+    width: 1.15rem;
+    height: 0.97rem;
+    display: block;
+    margin: 0.24rem auto 0;
+}
+#creditDialogs .title{
+    text-align: center;
+    font-size: 0.3rem;
+    color: #333333;
+    padding-top: 0.27rem;
+}
+#creditDialogs .t{
+    text-align: center;
+    font-size: 0.24rem;
+    color: #747474;
+    padding-top: 0.24rem;
+}
+#creditDialogs .reBtn{
+    width: 1.76rem;
+    height: 0.66rem;
+    line-height: 0.66rem;
+    text-align: center;
+    background: #EC4A58;
+    color: #ffffff;
+    font-size: 0.24rem;
+    border-radius: 0.06rem;
+    margin: 0.36rem auto 0;
+}
+.friendTips{
+    margin-top: 0.36rem;
+    padding: 0 0.22rem 0 0.28rem;
+}
+.friendTips .txt{
+    color: #333333;
+    font-size: 0.22rem;
+    display: flex;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    box-sizing: border-box;
+}
+.friendTips .txt:first-child{
+   margin-bottom: 0.28rem; 
+   font-size: 0.24rem;
+}
+.friendTips .txt .c{
+    flex: 1;
+    height: 0.39rem;
+    line-height: 0.39rem;
+}
+.friendTips .txt .c em{
+    color: #EC4A58;
+    font-size: 0.26rem;
+}
+.friendTips .btn{
+    float: right;
+    display: inline-block;
+    width: 1.04rem;
+    height: 0.39rem;
+    text-align: center;
+    line-height: 0.39rem;
+    color: #ffffff;
+    font-size: 0.2rem;
+    background: #EC4A58;
+    border-radius: 0.06rem;
+}
+
+/* 游戏开始说明 */
+.game-desc{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, .8);
+    z-index: 100;
+}
+
+.game-desc .desc-view{
+    width: 4.97rem;
+    height: 4.43rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -2.215rem 0 0 -2.485rem;
+    background: url(../res/elude/win-icon.png) no-repeat;
+    background-size:  contain;
+   
+}
+
+.game-desc .start-btn{
+    width: 2.02rem;
+    height: .63rem;
+    position: absolute;
+    bottom:  .5rem;
+    left: 50%;
+    margin-left: -1.01rem;
+    background: url(../res//elude/start-btn.png) no-repeat;    
+    background-size:  contain;
+}

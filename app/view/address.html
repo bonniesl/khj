@@ -1,0 +1,47 @@
+<style>
+    @include('../view_css/address.css');
+</style>
+
+<div class="view-title f38 relative">
+    <a id="goBack" href="javascript:void(0);" class="absolute back-btn f20">
+        <i class="icon"></i>
+    </a>
+    新增收货地址
+</div>
+<div class="collect-content">
+    <!-- 新增地址 -->
+    <!-- <p class="tip"><em></em>收货人姓名需和身份证姓名一致，否则会影响清关和收货</p> -->
+    <div id="addressAdds">
+         <div class="wrapper">
+            <div class='cell'>
+                <p class="name"><span>收货人</span></p>
+                <p class='content'><input id="addressName"  type="text" placeholder="请使用真实姓名"></p>
+            </div>
+            <div class='cell'>
+                <p class="name"><span>手机号码</span></p>
+                <p class='content'><input id="addressPhone" type="text" placeholder="请填写"></p>
+                <!-- <p class="attach"><span>+通讯录</span></p> -->
+            </div>
+            <div class='cell' id="addressSel">
+                <p class="name"><span>省市区</span></p>   
+                <p class='content'><input id="addressLocation" readonly="readonly" data-province="" data-city='' data-area='' type="text" placeholder="请填写"></p>
+                <!-- <p class="attach"><span><i class="icon icon_loc"></i>定位</span></p> -->
+            </div>
+            <div class='cell2'>
+                <p class="content-wrapper">
+                    <textarea  id="addressArea" name="" id="" cols="30" rows="4" placeholder="请填写详细地址"></textarea>
+                </p>
+            </div>
+        </div>
+        <div class='cell3'>
+            <p class="name"><span>设为默认收货地址</span></p>
+            <div class="switch-wrapper">
+                <div class="switch-container">
+                    <input id="switch" type="checkbox" class="switch" />
+                    <label for="switch" id="switchBtn"></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="save_addr_btn" id="saveAddr">保 存</div> 
+</div>

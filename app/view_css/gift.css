@@ -1,0 +1,100 @@
+/******????*****/
+#gift{
+    background: #f9f9f9;
+}
+.giftWrap .banner{
+    width: 7.5rem;
+    height:2.3rem;
+}
+.giftWrap .banner>img{
+    width:100%
+}
+.giftWrap .content .tit{
+    margin: 0.3rem auto 0;
+    width:1.76rem;
+    height:0.58rem;
+} 
+.giftWrap .list{
+    padding-top: 0.3rem;
+}
+.giftWrap .list ul{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0.03rem 0 0.3rem;
+}
+.giftWrap .list li{
+    width:2.12rem; 
+    height:2.67rem;
+    background: #ffffff;
+
+    margin:0 0.27rem 0.28rem 0;
+}
+.giftWrap .list li a{
+    display: block;
+}
+.giftWrap .list li .pic{
+    width:2.12rem;
+    height:2.12rem;
+}
+.giftWrap .list li .pic>img{
+    width:2.12rem;
+    height:2.12rem;
+}
+.giftWrap .list li .t{
+    color: #333333;
+    font-size:0.22rem;
+    text-align: center;
+    padding: 0 0.2rem;
+    height:0.55rem;
+    line-height: 0.55rem;
+}
+.giftBottom{
+    position: fixed;
+    bottom: 0;
+    width:7.5rem;
+    height:0.98rem;
+    background: #ffffff;
+    -webkit-box-shadow: 0 -1px #ddd;
+	-moz-box-shadow: 0 -1px #ddd;
+	box-shadow: 0 -1px #ddd;
+    z-index: 99;
+}
+.giftBottom .gift-select{
+    position: absolute;
+    left:0.06rem;
+    top:-1rem;
+    width:1.92rem;
+    height:1.92rem;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+.giftBottom .gift-select img{
+    width: 100%;
+}
+.giftBottom .giftname{
+    padding-left: 2.36rem; 
+    line-height: 1;
+}
+.giftBottom .giftname .t{
+    padding-top: 0.2rem;
+    color: #333333;
+    font-size: 0.26rem;
+}
+.giftBottom .giftname .price{
+    padding-top: 0.14rem;
+    color: #ec4a58;
+    font-size: 0.22rem;
+}
+.giftBottom .surebtn{
+    position: absolute;
+    right:0.3rem;
+    top:0.19rem;
+    background: #ec4a58;
+    color: #ffffff;
+    font-size: 0.24rem;
+    width:1.6rem;
+    height:0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+}

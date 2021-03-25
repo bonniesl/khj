@@ -1,0 +1,39 @@
+<style>
+        @include('../view_css/address.css');
+    </style>
+    
+    <div class="view-title f38 relative">
+        <a id="goBack" href="javascript:void(0);" class="absolute back-btn f20">
+            <i class="icon"></i>
+        </a>
+        地址编辑
+    </div>
+    <div class="collect-content">
+        <!-- 新增地址 -->
+        <!-- <p class="tip"><em></em>收货人姓名需和身份证姓名一致，否则会影响清关和收货</p> -->
+            <div class="wrapper" id="updateAddr">
+
+            </div>
+            <div class='cell3'>
+                <p class="name"><span>设为默认收货地址</span></p>
+                <div class="switch-wrapper">
+                    <div class="switch-container">
+                        <input id="switch" type="checkbox" class="switch" />
+                        <label for="switch" id="switchBtn"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="cell3" id="deleteAdd"><span>删除收货地址</span></div>
+        <div class="save_addr_btn" id="saveAddr">保 存</div> 
+    </div>
+
+<!---删除地址弹窗-->
+<div class="sureDialog">
+    <div class="dialogCon">
+        <p class="tips">确定要删除该地址吗？</p>
+        <div class="btnC">
+            <p class="cancle">取消</p>
+            <p class="del">删除</p>
+        </div>
+    </div>
+</div>

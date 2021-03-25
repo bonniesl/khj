@@ -1,0 +1,249 @@
+
+#address,#updateAddress {
+    background-color:#f9f9f9;
+    padding-top: 0.8rem;
+}
+
+.tip {
+    position: absolute;
+    top: 0.93rem;
+    left: 0.3rem;
+    width: 6.9rem;
+    text-align: center;
+    color: #fff;
+    background: #ec4a58;
+    height: 0.46rem;
+    line-height: 0.46rem;
+}
+
+.tip em {
+    display: block;
+    border-width: 0.17rem;
+    position: absolute;
+    bottom: -0.32rem;
+    left: 0.5rem;
+    border-style: solid dashed dashed;
+    border-color: #ec4a58 transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+
+.wrapper {
+    background-color: #fff;
+    margin-top: 0.2rem;
+}
+
+.wrapper .cell {
+    height: 0.8rem;
+    line-height: 0.8rem;
+    color: #333;
+    font-size: 0.26rem;
+    border-bottom: 0.02rem #efeef3 solid;
+    overflow: hidden;
+}
+
+.wrapper .cell .name {
+    float: left;
+    width: 1.78rem;
+}
+
+.wrapper .cell .name span {
+    margin-left: 0.3rem;
+}
+
+.wrapper .cell .attach {
+    float: right;
+    color: #ec4a58;
+    font-size: 0.26rem;
+}
+
+.wrapper .cell .attach span {
+    margin-right: 0.3rem;
+}
+
+.wrapper .cell .attach .icon_loc {
+    transform: scale(0.6);
+    width: 0.6rem;
+    height: 0.6rem;
+    background-position: -1.92rem -2.52rem;
+    vertical-align: middle;
+    margin: -0.1rem;
+    padding: 0.05rem;
+}
+
+.wrapper .cell .content {
+    /* margin-left: 1.78rem; */
+    /* margin-right: 1.5rem; */
+    height: 0.8rem;
+    float: left;
+}
+
+::-webkit-input-placeholder, ::-webkit-textarea-placeholder{/*Webkit browsers*/
+    color: #747474;
+    font-size: 0.26rem;
+}
+:-moz-placeholder{/*Mozilla Firefox 4 to 8*/
+    color: #747474;
+    font-size: 0.26rem;
+}
+::moz-placeholder{/*Mozilla Firefox 19+*/
+    color: #747474;
+    font-size: 0.26rem;
+}
+:-ms-input-placeholder, :-ms-textarea-placeholder{/*Internet Explorer 10+*/
+    color: #747474;
+    font-size: 0.26rem;
+}
+
+.wrapper .cell .content input {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    background: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.wrapper .cell2 {
+    height: 1.6rem;
+    margin-bottom: 0.36rem;
+}
+
+.wrapper  .cell2 .content-wrapper {
+    height: 100%;
+    /* padding: 0.3rem; */
+}
+
+.wrapper  .cell2 .content-wrapper textarea {
+    /* width: 100%; */
+    /* height: 100%; */
+    width: 6.9rem;
+    margin: 0.3rem;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+.cell3 {
+    height: 0.75rem;
+    line-height: 0.8rem;
+    color: #333;
+    font-size: 0.26rem;
+    border-bottom: 0.02rem #efeef3 solid;
+    overflow: hidden;
+    background: #fff;
+    margin-top: 0.38rem;
+}
+
+.cell3 .name {
+    float: left;
+    width: 2.5rem;
+}
+
+.cell3 .name span {
+    margin-left: 0.3rem;
+}
+
+.save_addr_btn {
+    height: 0.95rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    line-height: 0.95rem;
+    background-color: #ec4a58;
+    color: #fff;
+    font-size: 0.3rem;
+}
+#addressName{
+    width: 5rem;
+}
+#addressPhone,#addressLocation{
+    width: 5rem;
+}
+
+/* 按钮 */
+.switch-wrapper {
+    float: right;
+    margin-top: 0.08rem;
+    margin-right: 0.3rem;
+}
+/*开关的大小*/
+.switch-container {
+    /* height: 15px;
+    width: 30px; */
+    height: 0.59rem;
+    width: 1.12rem;
+}
+
+/*设置checkbox不显示*/
+.switch {
+    display: none;
+}
+
+/*设置label标签为椭圆状*/
+label {
+    display: block;
+    background-color: #EEEEEE;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 0.29rem;
+}
+
+/*在label标签内容之前添加如下样式，形成一个未选中状态*/
+label:before {
+    content: '';
+    display: block;
+    border-radius: 0.28rem;
+    height: 100%;
+    width: 0.68rem;
+    background-color: white;
+    opacity: 1;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 0.2s ease;
+}
+
+/*在label标签内容之后添加如下样式，形成一个选中状态*/
+label:after {
+    position: relative;
+    top: -0.6rem;
+    left: 0.5rem;
+    content: '';
+    display: block;
+    border-radius: 0.28rem;
+    height: 100%;
+    width: 0.6rem;
+    background-color: white;
+    opacity: 0;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.08);
+    -webkit-transition: all 0.2s ease;
+}
+#deleteAdd span{
+    margin-left: 0.3rem;
+    color: #ec4a58
+}
+
+
+/* ~ 兄弟选择符。
+   p~ul ：位于 p 元素之后的所有 ul 元素
+*/
+
+/*选中后，选中样式显示*/
+#switch:checked~label:after {
+    opacity: 1;
+}
+
+/*选中后，未选中样式消失*/
+#switch:checked~label:before {
+    opacity: 0;
+}
+
+/*选中后label的背景色改变*/
+#switch:checked~label {
+    background-color: #ec4a58;
+}
+

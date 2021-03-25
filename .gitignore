@@ -1,0 +1,6 @@
+/node_modules/
+/dist/
+/.vscode/
+app/res/.DS_Store
+app/.DS_Store
+.DS_Store

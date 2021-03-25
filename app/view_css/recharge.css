@@ -1,0 +1,364 @@
+#recharge,#friendRecharge{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #f9f9f9;
+    height: 100%;
+    z-index: 1001;
+    /* padding-top: 0.8rem; */
+    overflow-y: auto;  
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style:none;
+    overflow:-moz-scrollbars-none;
+}
+#recharge::-webkit-scrollbar,#friendRecharge::-webkit-scrollbar{width:0px}
+.rechargeBox{
+    min-height: 100%;
+    padding-bottom: 1.2rem;
+    overflow-y: auto;   
+    -webkit-overflow-scrolling: touch;
+}
+.rechargeBox .rechargeBanner{
+    width: 7.5rem;
+    height:2.9rem; 
+    position: relative;
+    margin:0 auto .2rem;
+}
+.rechargeBox .rechargeBanner img{
+    width: 7.5rem;
+    height: 2.9rem;  
+}
+
+.rechargeBox .rechargeBanner  .pic{
+    background: url(../res/recharge1.png) no-repeat 0 0 / 7.5rem 3.82rem;
+    width: 7.5rem;
+    height: 3.82rem;
+}
+.rechargeBox .recMonList{
+    margin:.12rem .22rem;
+    background: url('../res/czbg.png') no-repeat top center;
+    background-size: 7.1rem 7.77rem;
+}
+.recMonList{
+    padding-top: .98rem;
+}
+.rechargeBox .recMonList .reM{
+    /* height: 6rem;
+    overflow-y: auto; */
+}
+.recMonList .list{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: .32rem;
+    width: 7.1rem;
+    margin: 0 auto;
+}
+.recMonList .list .item{
+    width: 3.09rem;
+    height: 1.89rem;
+    margin-left: .3rem;
+    margin-bottom: .3rem; 
+    overflow: hidden;
+}
+
+.recMonList .list .item>a{
+    display: block;
+    width: 3.09rem;
+    height: 1.89rem;
+    background-size: 3.09rem 1.89rem;
+    position: relative;
+}
+.recMonList .list .item.firstCZ a{
+    background: url('../res/scRegacher1.png') no-repeat top center;
+    background-size: 3.09rem 1.89rem;
+}
+.recMonList .list .item.hzCz a{
+    background: url('../res/rechagreK.png') no-repeat top center;
+    background-size: 3.09rem 1.89rem;
+}
+.recMonList .list .item .icon{
+    position: absolute;
+    top:0;
+    left: 0;
+    width:0.84rem;
+    height: 0.84rem;
+    color: #fff;
+    font-size: 0.18rem;
+    background-position: -4.28rem 0;
+    border-top-left-radius: 0.1rem;
+    line-height: 1;
+}
+.recMonList .list .item .icon em{
+    display: block;
+    transform: rotate(-45deg);
+}
+.recMonList .list .item .icon em span{
+    display: block;
+}
+.recMonList .list .item.firstCZ.cur a{
+    background-image: url('../res/scRegacher.png');
+}
+.recMonList .list .item.hzCz.cur a{
+    background-image: url('../res/rechargeH.png');
+}
+.recMonList .list .item.cur .icon{
+    background-position: -5.12rem 0;
+}
+.recMonList .list .item>a .price{
+    position: absolute;
+    top: .3rem;
+    left: 1.5rem; 
+    line-height: 1;
+}
+.recMonList .list .item>a .mon{
+    font-size: .36rem;
+    color: #333;
+    display: block;
+}
+.recMonList .list .item>a .mon em{
+    padding-right: 0.08rem;
+}
+.recMonList .list .item>a .num{
+   font-size: 0.24rem;
+   margin-top: 0.14rem;
+   display: block;
+   color: #ec4a59;
+}
+.recMonList .list .item.cur>a .num{
+    color: #ffb636;
+}
+.recMonList .list .item>a .txtTo{
+    position: absolute;
+    bottom: .1rem;
+    left: 0rem; 
+    font-size: .28rem;
+    text-align: center;
+    width: 3.09rem;
+    color: #fff; 
+}
+.okRechargeBtn{
+    display: block;
+    height: .91rem;
+    background-color: #ec4a59;
+    width:100%;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    line-height: .91rem;
+    font-size: .3rem;
+    margin-bottom: .8rem;
+}
+.rechargeBox .rechargeBanner>i.icon01{
+    display: block;
+    width: .51rem;
+    height: .51rem;
+    background: url('../res/recharge01.png') no-repeat top center;
+    background-size: .51rem .51rem;
+    position: absolute;
+    left: .3rem;
+    top: .2rem;
+}
+.rechargeBox .rechargeBanner>em.icon02{
+    display: block;
+    width: 1.03rem;
+    height: 1.03rem;
+    background: url('../res/daifu.png') no-repeat top center;
+    background-size: 1.03rem 1.03rem;
+    position: absolute;
+    right: .5rem;
+    top: 1.24rem;
+}
+.rechargeBox .rechargeBanner .wordList{
+    position: absolute;
+    width: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    bottom: .2rem;
+    left: .3rem;
+
+}
+/*好友代充*/
+#shareFriendRecharge .rechargeBox .rechargeBanner{
+    height: 3.82rem;
+}
+#shareFriendRecharge .rechargeBox .rechargeBanner img{
+    height: 3.82rem;
+}
+.rechargeTxt{
+    text-align: center;
+    color: #ec4a59;
+    font-size: 0.24rem;
+    padding-top: 0.1rem;
+}
+#shareFriendRecharge .top{
+    padding: 0.38rem 0 0.48rem 0.3rem;
+    position: absolute;
+    bottom: -0.38rem;
+}
+#shareFriendRecharge.top .advanter{
+    width: 1rem;
+    height: 1rem;
+}
+#shareFriendRecharge .top .advanter>img{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+#shareFriendRecharge .top .talkTip{
+    position: absolute;
+    left:1.6rem;
+    top:0.76rem;
+    width: 4.5rem;
+    height: 0.6rem;
+    color: #f9f9f9;
+    font-size: 0.24rem;
+    text-align: left;
+    background: #ec4a58;
+    line-height: 0.6rem;
+    padding: 0 0.2rem;
+    border-radius: 0.1rem;
+    box-sizing: border-box
+}
+#shareFriendRecharge .top .talkTip::after{
+    content: '';
+    position: absolute;
+    left: -0.12rem;
+    top: 0.14rem;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0.12rem 0.12rem 0.12rem 0;
+    border-color: transparent #ec4a58 transparent transparent;
+}
+/*分享给好友*/
+.shareDialog{
+    position: fixed;
+     top: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.5);
+     width: 100%;
+     height: 100%;
+     z-index: 99;
+     display: none;
+}
+.shareDialog img{
+    position: absolute;
+    left:50%;
+    top:8%;
+    width: 4.7rem;
+    height: 4.38rem;
+    margin-left:-2.35rem;
+    z-index: 100;
+}
+/*充值选择*/
+.rechargeDialog{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 1006;
+    display: none;
+}
+.rechargeDialog .redialogCon{
+    background: #dddddd;
+    width: 7.5rem;
+    height:7.09rem;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    margin-left:-3.75rem;
+    z-index: 1006;
+}
+.rechargeDialog .redialogCon .title{
+    position: relative;
+    background: #fff;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    text-align: center;
+    color: #333333;
+    font-size: 0.38rem;
+    border-bottom: 1px solid #dddddd;
+    box-sizing: border-box;
+}
+.rechargeDialog .redialogCon .close{
+    position: absolute;
+    top: 0.14rem;
+    right: 0.16rem;
+    width: .54rem;
+    height: .54rem;
+    background-position-x: -1.9rem;
+    cursor: pointer;
+}
+.rechargeDialog .redialogCon .price{
+    background: #fff;
+    height: 1.92rem;
+    line-height: 1.92rem;
+    text-align: center;
+    color: #333333;
+    font-size: 0.6rem
+}
+.rechargeDialog .redialogCon .price>.total{
+    font-size: 0.82rem;
+    display: inline;
+}
+.rechargeDialog .payList li{
+    display: flex;
+    margin: 0.12rem 0;
+    width: 7.5rem;
+    height: 1.15rem;
+    background: #fff;
+    padding: 0 0 0 0.34rem;
+    box-sizing: border-box;
+}
+.rechargeDialog .payList li .info{
+    width:5.46rem;
+    padding: 0 0.12rem 0 0.22rem;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.rechargeDialog .payList li .info .t{
+    color: #333333;
+    font-size: 0.3rem;
+    padding-top: 0.26rem;
+}
+.rechargeDialog .payList li .info .c{
+    color: #929292;
+    font-size: 0.24rem;
+    padding-top: 0.12rem;
+}
+.rechargeDialog .payList li .payico{
+    width: 0.85rem;
+    height: 1.15rem;
+}
+.rechargeDialog .payList li  .selIco{
+    background: url(../res/gou.png) no-repeat center center / 0.58rem 0.58rem;
+    width: 0.58rem;
+    height: 1.15rem;
+}
+.rechargeDialog .payList li  .selIco.cur{
+    background: url(../res/gouSel.png) no-repeat center center / 0.58rem 0.58rem;
+}
+#wx .payico{
+    background: url(../res/wxico.png) no-repeat center center / 0.85rem 0.86rem;
+}
+#zfb .payico{
+    background: url(../res/zfbico.png) no-repeat center center / 0.85rem 0.86rem;
+}
+#wx {
+    display: none;
+}
+.payBtn-action{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 7.5rem;
+    height: 0.83rem;
+    line-height: 0.83rem;
+    background: #ec4a58;
+    color: #fff;
+    font-size: 0.36rem;
+    text-align: center;
+}
